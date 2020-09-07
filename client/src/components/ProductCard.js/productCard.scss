@@ -1,0 +1,30 @@
+.card {
+  border: none;
+  text-align: center;
+
+  
+}
+
+.card-body > .card-title {
+  font-weight: 400;
+}
+
+.card_description {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // justify-content: space-between;
+  // align-items: center;
+  // padding: 7% 0 2% 0;
+
+  p {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+  }
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+}

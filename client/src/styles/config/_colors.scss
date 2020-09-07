@@ -1,0 +1,17 @@
+:root {
+  --base-yellow: 60;
+  --yellow-light: hsla(var(--base-yellow), 50%, 75%, 100%);
+  --yellow-normal: hsla(var(--base-yellow), 50%, 50%, 100%);
+  --yellow-darker: hsla(var(--base-yellow), 50%, 35%, 100%);
+
+  --base-green: 120;
+  --green-light: hsla(var(--base-green), 50%, 75%, 100%);
+  --green-normal: hsla(var(--base-green), 50%, 50%, 100%);
+  --green-darker: hsla(var(--base-green), 50%, 35%, 100%);
+
+  /*base color 3 */
+  --base-blue: 200;
+  --blue-light: hsla(var(--base-blue), 50%, 75%, 100%);
+  --blue-normal: hsla(var(--base-blue), 50%, 50%, 100%);
+  --blue-darker: hsla(var(--base-blue), 50%, 35%, 100%);
+}

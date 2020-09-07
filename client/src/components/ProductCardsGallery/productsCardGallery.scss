@@ -1,0 +1,6 @@
+.products_card_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+  justify-content: center;
+  grid-gap: 20px;
+}

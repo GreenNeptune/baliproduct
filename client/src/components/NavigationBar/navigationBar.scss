@@ -1,0 +1,46 @@
+.navbar {
+  .nav_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 50px;
+  }
+  width: 100%;
+}
+
+// .fa-user {
+//   color: black;
+//   padding: 13px;
+//   background-color: white;
+//   border-radius: 50%;
+//   border: 1px solid black;
+// }
+
+// .fa-heart {
+//   color: black;
+//   padding: 13px;
+//   background-color: white;
+//   border-radius: 50%;
+//   border: 1px solid black;
+// }
+
+// .fa-shopping-cart {
+//   color: black;
+//   padding: 12px;
+//   background-color: white;
+//   border-radius: 50%;
+//   border: 2px solid black;
+// }
+
+// .fa-sm {
+//   font-size: 1.3em;
+
+//   @media (max-width: 568px) {
+//     font-size: 0.9em;
+//   }
+// }

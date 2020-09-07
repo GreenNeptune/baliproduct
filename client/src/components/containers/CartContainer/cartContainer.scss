@@ -1,0 +1,27 @@
+.cart {
+  .cart_products {
+    display: grid;
+    grid-row-gap: 15px;
+    width: 100%;
+  }
+  p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.btn_checkout {
+  color: white;
+  background-color: #f70bef;
+  border-color: #f70bef;
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+    outline: none !important;
+    box-shadow: none;
+    background-color: #b105ab;
+    border-color: #b105ab;
+  }
+}

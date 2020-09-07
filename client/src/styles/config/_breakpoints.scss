@@ -1,0 +1,9 @@
+/* Breakpoints
+break1 small devices phones
+break2 tablet  
+break3  desktop
+*/
+
+$break1: '(max-width: 460px)';
+$break2: '(min-width: 571px) and (max-width: 1002px)';
+$break3: '(min-width: 1003px)';
