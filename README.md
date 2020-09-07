@@ -17,6 +17,3 @@ Online Shop App
 - Node.js
 
 [BaliProduct](https://baliproduct.herokuapp.com/)
-# baliproduct
-# baliproduct
-# baliproduct
