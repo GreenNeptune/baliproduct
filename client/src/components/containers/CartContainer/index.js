@@ -20,7 +20,7 @@ export function CartContainer({ products, removeProductFromCart, updateProductQu
   return (
     <div className="cart container-fluid p-0">
       <div className=" d-flex justify-content-around align-items-center mb-5 pb-4 pt-4" style={{ backgroundColor: "#d6d6d6" }} >
-        <p className='cart_total'>Total$: {total.toFixed(2)} </p>
+        <p className='cart_total'>Total: ${total.toFixed(2)} </p>
         <button type="button" className='btn btn_checkout'>checkout</button>
 
       </div>

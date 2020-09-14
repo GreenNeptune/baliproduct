@@ -5,21 +5,28 @@ import Nav from 'react-bootstrap/Nav';
 import './navigationBar.scss';
 import { logout } from '../../redux_store/reducers/auth/actions';
 import { connect } from 'react-redux';
+import { getCartProductsLength } from '../../redux_store/reducers/cart/cart.utils';
 
-const NavigationBar = ({ auth: { isAuthenticated, loading }, logout }) => {
+const NavigationBar = ({ auth: { isAuthenticated, loading }, logout, cartProducts }) => {
   const menuRef = useRef(null);
   const [meneHeight, setMeneHeight] = useState(0);
 
+
+
   const authLinks = (
     <Nav className="ml-auto d-flex align-items-center">
-      <Link className="nav_link" to='/cart'>
-        <i className="fa fa-shopping-cart fa-lg " aria-hidden="true"></i>
-      </Link>
-      <Link className="nav_link" to='/favorites'>
-        <i className="fas fa-heart fa-lg"></i>
-      </Link>
+      {cartProducts.length > 0 ? (
+        <Link className={`nav_link`} to='/cart'>
+          <i className="fa fa-shopping-cart fa-2x " aria-hidden="true"></i>
+          <span className="cart_has_products"> {(getCartProductsLength(cartProducts))}</span>
+
+        </Link>
+      ) : (<Link className={`nav_link`} to='/cart'>
+        <i className="fa fa-shopping-cart fa-2x " aria-hidden="true"></i>
+      </Link>)}
+
       <Link className="nav_link" to='/login' onClick={logout}>
-        <i className='fas fa-sign-out-alt fa-lg' />{' '}
+        <i className='fas fa-sign-out-alt fa-2x' />{' '}
       </Link>
     </Nav>
   );
@@ -27,7 +34,7 @@ const NavigationBar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <Nav className="ml-auto d-flex align-items-center">
       <Link className="nav_link" to='/login'>
-        <i className="fas fa-user fa-lg"></i>
+        <i className="fas fa-user fa-2x"></i>
       </Link>
     </Nav>
   );
@@ -59,6 +66,7 @@ const NavigationBar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
 
 const mapStateToProps = state => ({
+  cartProducts: state.cart.products,
   auth: state.auth
 });
 

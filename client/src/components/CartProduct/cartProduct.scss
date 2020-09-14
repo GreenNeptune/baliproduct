@@ -21,33 +21,6 @@
       height: 100%;
       object-fit: cover;
     }
-
-    .cart_product_favorite_icon {
-      position: absolute;
-      top: 7%;
-      right: 5%;
-      transition: 0.3s ease-in all;
-      padding: 10px;
-      border-radius: 50%;
-      color: hsl(7, 86%, 56%);
-      background-color: transparent;
-      background-color: hsl(7, 86%, 56%);
-      color: white;
-      // color: black;
-      &:hover,
-      :active {
-        // font-size: 150%;
-        background-color: white;
-        color: hsl(7, 86%, 56%);
-        background-color: transparent;
-        // padding: 20px;
-
-        // color: white;
-        // color: hsl(7, 86%, 56%);
-
-        cursor: pointer;
-      }
-    }
   }
 
   .cart_product_title {
@@ -75,6 +48,7 @@
     font-size: 24px;
     color: rgb(226, 117, 103);
   }
+
   .form_input_cart_product_quantity {
     display: grid;
     grid-template-columns: repeat(2, minmax(40%, 1fr));
@@ -93,7 +67,6 @@
 
 .input-group {
   width: 25%;
-
   @media (max-width: 768px) {
     width: 70%;
   }

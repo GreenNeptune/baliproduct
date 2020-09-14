@@ -3,7 +3,7 @@ import { Form, InputGroup } from "react-bootstrap";
 import './cartProduct.scss'
 function CartProduct({ product, updateProductQuantity, removeProductFromCart }) {
 
-  const [quantityInput, setQuantityInput] = useState(1);
+  const [quantityInput, setQuantityInput] = useState(product.quantity);
 
   const generateArrayByNumber = (num) => Array.from({ length: num }, (value, index) => index + 1);
 
@@ -30,19 +30,12 @@ function CartProduct({ product, updateProductQuantity, removeProductFromCart }) 
   return (
     <div className="cart_product">
       <div className="cart_product_img">
-        <div className="cart_product_favorite_icon">
-          <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-        </div>
         <img src={product.imgUrl} alt={product.title} />
       </div>
       <div className="cart_product_description">
         <div className="cart_product_title">{product.title}
         </div>
-        {/* <div className="cart_product_like_icon">
-          <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>{' '}{product.likes && product.likes.length > 0 ? product.likes.length : '4'}
-        </div> */}
-
-        <div className="cart_product_price">{product.price}$</div>
+        <div className="cart_product_price">${product.price}</div>
         <Form onSubmit={onSubmit}>
           <Form.Group controlId="exampleForm.ControlInput1" className="mt-2 mt-sm-5" md="4" >
             <InputGroup>

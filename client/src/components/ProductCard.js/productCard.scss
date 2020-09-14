@@ -1,21 +1,17 @@
 .card {
   border: none;
   text-align: center;
-
-  
 }
 
 .card-body > .card-title {
   font-weight: 400;
 }
 
-.card_description {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding: 7% 0 2% 0;
+.card-text {
+  color: rgba(202, 45, 45, 0.8);
+}
 
+.card_description {
   p {
     margin: 0;
     padding-bottom: 20px;
