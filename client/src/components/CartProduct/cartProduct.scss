@@ -1,3 +1,5 @@
+@import '../../styles/config/mixin.scss';
+
 .cart_product {
   display: grid;
   grid-gap: 44px;
@@ -24,14 +26,7 @@
   }
 
   .cart_product_title {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
+    @include break-word();
     hyphens: auto;
     font-size: 32px;
     margin-bottom: 40px;
