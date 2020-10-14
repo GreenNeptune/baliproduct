@@ -1,22 +1,17 @@
 .card {
   border: none;
   text-align: center;
-}
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
 
-.card-body > .card-title {
-  font-weight: 400;
-}
-
-.card-text {
-  color: rgba(202, 45, 45, 0.8);
-}
-
-.card_description {
-  p {
-    margin: 0;
-    padding-bottom: 20px;
-    font-size: 1.5em;
+  &.card-body > .card-title {
+    font-weight: 400;
   }
+}
+
+.card_product_price {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 1.2em;
 }
 
 .card-img,
